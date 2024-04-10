@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>
+<body>
+    <h1>Resultados</h1>
+    <h2>Tabla de resultados</h2>
+    <table>
+        <tr>
+            <th>x</th>
+            <th>y</th>
+        </tr>
+        {% for i in range(x_vals|length) %}
+        <tr>
+            <td>{{ x_vals[i] }}</td>
+            <td>{{ y_vals[i] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2>Gráfica de la solución</h2>
+    <img src="{{ url_for('static', filename='plot.png') }}" alt="Gráfica de la solución">
+</body>
+</html>

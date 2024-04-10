@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "jupyter-matplotlib": "^0.11.3"
+  }
+}
